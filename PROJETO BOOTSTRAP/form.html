@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+      /*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");*/
+      nav{
+        background-color: white;
+        box-shadow:
+        /*15px 10px 20px 5px /*rgba(0,0,0, black) blaack*/
+        0 6px 9px -4px rgba(0, 0, 0, .1);
+      }
+
+      .nav2{
+       background-color: blue;
+      }
+
+      .formContainer {
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+
+
+
+      .imgCarrossel{
+        height: 500px;
+        width: auto;
+      }
+
+      .alinhaDiv{
+        text-align: center;
+      }
+
+      .icones{
+        color:rgb(20, 90, 194);
+      }
+
+      .card p{
+        margin-top: 20px;
+        height: 80px;
+      }
+
+    </style>
+
+</head>
+<body>
+    <!--Início NavBar-->
+    <nav class="navbar nav1 fixed-top navbar-expand-lg bg-body-tertiary p-3" >
+        <div class="container-fluid">
+         <!-- data-bs-theme="dark"  -->
+
+          <a class="navbar-brand" href="projetoBootstrap.html" >
+            <img src="logo1.png" alt="BlueFit" width="100" height=auto>
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="academias.html">Academias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="form.html">Começar Agora</a>
+              </li>
+
+            
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Busca">
+              <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Fim NavBar-->
+
+    <br>
+    <br>
+
+    <div class="container formContainer mt-5 pb-3 pt-3">
+
+        <br>
+
+        <h3 class="display-4 alinhaDiv"> <!--<i class="bi bi-building"></i></i>--> Cadastro</h3>
+
+        <p class="lead alinhaDiv ">Preencha o formulário abaixo:</p>
+
+        <!--inicio form-->
+        <form novalidate class="needs-validation">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-2">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">
+                        O Nome é Obrigatóro.
+                    </div>
+                </div>
+
+
+
+                <br>
+
+                <div class="col-md-4 col-sm-12 mb-2">
+                    <label class="form-label">Email:</label>
+                    <input type="email" class="form-control" required>
+                    <div class="invalid-feedback">
+                        O Email deve ter um formato válido e é obrigatório.
+                    </div>
+                </div>
+
+
+                <br>
+
+                <div class="col-md-2 col-sm-12 mb-2">
+                    <label class="form-label">Telefone:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-2">
+                    <label class="form-label">Gênero:</label>
+                    <select class="form-select">
+                        <option></option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        
+                    </select>
+                </div>
+
+
+
+                <br>
+
+                <div class="col-md-3 col-sm-12 mb-2">
+                    <label class="form-label">Idade:</label>
+                    <input type="number" class="form-control">
+                </div>
+
+
+                <br>
+
+                <div class="col-md-3 col-sm-12 mb-2">
+                    <label class="form-label">Altura (cm)</label>
+                    <input type="number" class="form-control">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <label class="form-label">Objetivo:</label>
+                    <textarea class="form-control" required minlength="20"></textarea>
+                    <div class="invalid-feedback">
+                        O Objetivo Deve ter no mínimo 20 caracteres.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <button type="submit" class="btn btn-primary btn-sm"  ><i class="bi bi-send"></i> Enviar</button>
+                    <button type="reset" class="btn btn-primary btn-sm"><i class="bi bi-x-circle"></i> Limpar</button>
+
+                </div>
+            </div>
+
+            
+        </form>
+
+        <!--fimform-->
+    </div>
+
+    <br>
+    <br>
+
+    <!--Inicio Pagination-->
+    <nav aria-label="...">
+        <ul class="pagination pagination-sm justify-content-center">
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="projetoBootstrap.html">1</a>
+          </li>
+          <li class="page-item "><a class="page-link" href="academias.html">2</a></li>
+          <li class="page-item active"><span class="page-link" >3</span></li>
+        </ul>
+      </nav>
+      <!--Fim Pagination-->
+
+     
+      <!--Início Rodapé-->
+  <nav class="navbar nav2 bg-body-tertiary mt-5" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        
+     <div class="container mt-3 alinhaDiv">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="display-3">Contato</h3>
+        </div>
+      </div>
+      <div class="row mt-4 mb-3">
+      <div class="col-sm-12 col-md-4 alinhaDiv ">
+        <i class="bi bi-telephone icones"></i>
+        (19) 934315078
+      </div>
+      <div class=" col-sm-12 col-md-4 alinhaDiv">
+        <i class="bi bi-envelope-fill icones"></i>
+        contato@bluefit.com.br</div>
+      <div class="col-sm-12 col-md-4 alinhaDiv">
+        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-facebook "></i></button>
+        <button type="button" class="btn btn-primary btn-sm"> <i class="bi bi-instagram "></i></button>
+        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-youtube "></i></button>
+       </div>
+      </div>
+
+
+      </a>
+    </div>
+  </nav>
+  <!--Fim Rodapé-->
+
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+
+
+
+</body>
+</html>

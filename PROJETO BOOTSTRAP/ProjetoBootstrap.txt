@@ -1,0 +1,20 @@
+  * Navbar = Todas as Páginas - usado navbar fixo
+  * Grid System = Página "Academias" 
+  * Cards = Página "Academias"
+  * Ícones = Página "Inicial" e Rodapé
+  * Accordion = Página "Inicial"
+  * Carrossel = Página "Inicial"
+  * Formatação e tratamento de forms = Página "Começar Agora"
+
+  - Uso de pelo menos 3 componentes não trabalhados em aula, demonstrando conhecimento em utilizar a documentação do framework: 
+
+  * ALERTS = Utilizado na página "Academias"
+  * BADGE = Utilizado na página "Academias", usado para indicar que é uma unidade "recém construida"
+  * PAGINATION = Utilizado em todas as páginas para a navegação entre elas (localizada no final, antes do rodapé)
+
+Nicolas e Samuel 3DSN
+
+
+  
+
+  

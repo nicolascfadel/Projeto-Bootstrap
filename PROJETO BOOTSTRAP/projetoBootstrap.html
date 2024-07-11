@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+      /*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");*/
+      nav{
+        background-color: white;
+        box-shadow:
+        /*15px 10px 20px 5px /*rgba(0,0,0, black) blaack*/
+        0 6px 9px -4px rgba(0, 0, 0, .1);
+      }
+
+      .nav2{
+       background-color: blue;
+      }
+
+      .textCarrossel{
+        text-shadow: black 0.1em 0.1em 0.2em;
+      }
+
+
+      .imgCarrossel{
+        height: 500px;
+        width: auto;
+      }
+
+      .alinhaDiv{
+        text-align: center;
+      }
+
+      .icones{
+        color:rgb(20, 90, 194);
+      }
+
+    </style>
+
+</head>
+<body>
+    <!--Início NavBar-->
+    <nav class="navbar nav1 fixed-top navbar-expand-lg bg-body-tertiary p-3" >
+        <div class="container-fluid">
+         <!-- data-bs-theme="dark"  -->
+
+          <a class="navbar-brand" href="projetoBootstrap.html" >
+            <img src="logo1.png" alt="BlueFit" width="100" height=auto>
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="academias.html">Academias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Começar Agora</a>
+              </li>
+
+            
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Busca">
+              <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Fim NavBar-->
+
+      <br>
+      <br>
+      <br>
+
+      <div class="container pb-3 pt-4 mt-8">
+
+    <!-- Início Carrossel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgCarrossel/acad1.jpg" class="d-block  w-100 " alt="Academia">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="textCarrossel">Saúde</h5>
+        <p class=" textCarrossel">Um Corpo Saudável Não Começa na Academia, Mas em Sua Mente</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imgCarrossel/acad2.jpg" class="d-block  w-100 " alt="Academia Instrutor">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="  textCarrossel">Treinadores Especializados</h5>
+        <p  class=" textCarrossel">Treinos Comandados por Profissionais Formados em Educação Física</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imgCarrossel/acad3.jpeg" class="d-block  w-100 " alt="Academia Estrutura"><!--w-100 no lugar do h-500-->
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class=" textCarrossel">Nossa Estrutura</h5>
+        <p class=" textCarrossel">Aparelhos de Alta Qualidade e de Mais Nova Tecnologia, Além de Vestiários e Muito Mais!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <!-- Fim Carrossel -->
+  </div>
+
+  <div class="container cursosContainer pb-3 pt-3">
+
+
+    <h3 class="display-5 alinhaDiv"><i class="bi bi-house"></i> Sobre Nós</h3>
+
+    <p class="lead alinhaDiv">Informações Gerais</p>
+
+    <!--Início Accordion-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Programas de Treinamento
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                      <h6>Musculação</h6>  
+                      <p>
+                        Desenvolva sua força e resistência com nosso programa de musculação. Oferecemos uma variedade de exercícios e equipamentos de última geração para ajudá-lo a atingir seus objetivos de condicionamento físico.
+                      </p>
+                      <h6>Funcional</h6>
+                      <p>Experimente nosso programa de treinamento funcional, que se concentra em movimentos naturais e funcionais para melhorar a agilidade, a flexibilidade e a força. Adequado para todas as idades e níveis de condicionamento físico.</p>
+                      <h6>Aulas de Ioga</h6>
+                      <p>Relaxe e revitalize seu corpo e mente com nossas aulas de ioga. Nossos instrutores experientes guiarão você através de poses e técnicas de respiração para promover o equilíbrio e o bem-estar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Horários de Funcionamento
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Segunda-feira: 6h - 22h</li>
+                    <li>Terça-feira: 6h - 22h</li>
+                    <li>Quarta-feira: 6h - 22h</li>
+                    <li>Quinta-feira: 6h - 22h</li>
+                    <li>Sexta-feira: 6h - 22h</li>
+                    <li>Sábado: 8h - 20h</li>
+                    <li>Domingo: 8h - 20h</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Loja - Produtos
+              </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                    <h6>Suplementos</h6>  
+                    <p>Maximize seus resultados com nossos suplementos de alta qualidade. Oferecemos uma ampla gama de opções para atender às suas necessidades de nutrição e desempenho. Nossos instrutores podem ajudá-lo a escolher os suplementos certos para seus objetivos de treinamento.</p>
+                    <h6>Roupas</h6>
+                    <p>Fique confortável e com estilo durante seus treinos com nossas roupas de academia de última geração. Temos uma variedade de opções, desde roupas esportivas a roupas de treinamento, tudo projetado para atender às demandas do seu treinamento.</p>
+                    
+                    <p>Visite nossa loja dentro da academia para explorar nossa gama completa de produtos. Nossa equipe estará à disposição para ajudá-lo a encontrar o que você precisa para atingir seus objetivos de fitness.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<!--Fim Accordion-->
+
+</div>
+
+<br>
+
+
+<!--Início Pagination-->
+<nav aria-label="...">
+  <ul class="pagination pagination-sm justify-content-center">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">1</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="academias.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="form.html">3</a></li>
+  </ul>
+</nav>
+<!--Início Pagination-->
+
+  <!--Início Rodapé-->
+  <nav class="navbar nav2 bg-body-tertiary mt-5" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+     <div class="container mt-3 alinhaDiv">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="display-3">Contato</h3>
+        </div>
+      </div>
+      <div class="row mt-4 mb-3">
+      <div class="col-sm-12 col-md-4 alinhaDiv ">
+        <i class="bi bi-telephone icones"></i>
+        (19) 934315078
+      </div>
+      <div class=" col-sm-12 col-md-4 alinhaDiv">
+        <i class="bi bi-envelope-fill icones"></i>
+        contato@bluefit.com.br</div>
+      <div class="col-sm-12 col-md-4 alinhaDiv">
+        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-facebook "></i></button>
+        <button type="button" class="btn btn-primary btn-sm"> <i class="bi bi-instagram "></i></button>
+        <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-youtube "></i></button>
+       </div>
+      </div>
+
+
+      </a>
+    </div>
+  </nav>
+  <!--Fim Rodapé-->
+
+
+
+
+</body>
+</html>
